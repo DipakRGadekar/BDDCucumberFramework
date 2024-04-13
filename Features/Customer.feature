@@ -6,7 +6,7 @@ Background: Steps common for all scenarios
 	And Click on Login 
 	Then User can view Dashboard page 
 
-@Regression		
+@Sanity		
 Scenario: Add new customer  
 	When User click on customers Menu
 	And click on customers Menu Item 

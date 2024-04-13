@@ -5,8 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.github.dockerjava.api.model.Driver;
-
 public class LoginPage {
 
 	WebDriver ldriver;
@@ -41,8 +39,13 @@ public class LoginPage {
 	public void clickonLoginBtn() {
 		loginBtn.click();
 	}
-	public void clickonLogoutBtn() throws InterruptedException {
-		Thread.sleep(2000);
+	public void clickonLogoutBtn()  {
+		 try {
+		        Thread.sleep(4000); // Add a short sleep before the click (optional)
+		    } catch (InterruptedException e) {
+		        // Handle interruption if needed
+		        e.printStackTrace();
+		    }
 		logoutBtn.click();
 	}
 }
